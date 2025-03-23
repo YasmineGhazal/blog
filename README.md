@@ -1,4 +1,5 @@
 # Instructions
+*The app is deployed [here](https://blog-915q949nn-yasmineghazals-projects.vercel.app)*
 - Clone github repo
 - Open the terminal on the cloned repo directory
 - Run `npm i`
@@ -23,7 +24,11 @@
     - To create a new post the user can click on "write" button or navigate to `/posts/new`
 
 # CI/CD
-
+The CI/CD pipeline is managed through the workflows/pipeline.yml file, which contains the following steps:
+    - ESLint: Runs linting checks to catch any code quality issues.
+    - Unit Tests: Runs the unit tests using a testing framework like Jest or React Testing Library.
+    - Deploy: After passing the linting and testing steps, the workflow deploys the application to Vercel.
+By using this CI/CD pipeline, we ensure that every code change goes through rigorous checks before being deployed, making the development process more efficient and reliable.
 
 # Docker
 To run the project using the defined dockerfile
