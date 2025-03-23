@@ -1,0 +1,24 @@
+.container {
+	align-items: center;
+	align-self: center;
+	background: var(--card-bg);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	justify-content: center;
+	padding: 25px 10px;
+	width: 300px;
+}
+
+.button {
+	border: 1px solid;
+	cursor: pointer;
+	padding: 2px 5px;
+	text-align: center;
+	width: 200px;
+}
+
+.button:hover {
+	transform: scale(1.025);
+}

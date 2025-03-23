@@ -1,0 +1,67 @@
+.container {
+	border-radius: 8px;
+	box-shadow: 0px 0px 5px 5px var(--shadow);
+	flex: 1 1 calc(25% - 10px);
+	padding: 3px 5px;
+	text-align: center;
+	width: 250px;
+	background: var(--card-bg);
+	position: relative;
+}
+
+.container:hover {
+	transform: scale(1.025);
+}
+
+.details {
+	color: inherit;
+	flex: 1 1 calc(25% - 10px);
+	padding: 3px 5px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.blogImage {
+	max-height: 200px;
+	max-width: 250px;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.description {
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	display: -webkit-box;
+	font-size: 13px;
+	overflow: hidden;
+	word-break: break-word;
+}
+
+.buttons {
+	padding: 5px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.editButton, .deleteButton {
+	align-items: center;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	gap: 5px;
+	padding: 5px 10px;
+}
+
+.editButton {
+	background-color: var(--publish);
+	margin-bottom: 5px;
+}
+
+.deleteButton {
+	background-color: var(--delete);
+}
