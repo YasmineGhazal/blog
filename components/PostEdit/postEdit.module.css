@@ -1,0 +1,109 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-self: center;
+	width: 100%;
+	max-width: 1400px;
+}
+
+.postContainer {
+	display: flex;
+	justify-content: space-between;
+	padding: 16px;
+}
+
+.imageContainer, .textContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	flex: 1;
+}
+
+.imageContainer {
+	align-items: center;
+}
+
+.input {
+	background: transparent;
+	border: none;
+	border-left: groove 1px var(--card-bg);
+	color: inherit;
+	font-size: 20px;
+	padding: 3px 5px;
+}
+
+.input:focus {
+	background: var(--card-bg);
+	border: none;
+	border-left: groove 1px var(--card-bg);
+	outline: none;
+}
+
+.image {
+	border-radius: 8px;
+	max-width: 500px;
+	height: auto;
+}
+
+.title {
+	height: 50px;
+	font-size: 25px
+}
+
+.description {
+	height: 30px;
+}
+
+.content {
+	max-width: 850px;
+	resize: vertical;
+	min-height: 100px;
+	overflow-y: auto;
+}
+
+.publish {
+	background: var(--publish);
+}
+
+.discard {
+	background: var(--discard);
+}
+
+.delete {
+	background: var(--delete);
+}
+
+.button {
+	border-radius: 5px;
+	border: none;
+	color: inherit;
+	cursor: pointer;
+	font-size: 20px;
+	height: 30px;
+	width: 150px;
+}
+
+.buttons {
+	display: flex;
+	gap: 5px;
+	justify-content: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+	.postContainer {
+		flex-direction: column;
+	}
+
+	.image {
+		width: auto;
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	.buttons {
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+	}
+}
