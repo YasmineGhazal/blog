@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { dbConnection } from "../../mongodb";
-import Post from "@/../../models/Post";
+import Post from "../../../../models/Post";
 
 export async function GET(req) {
     const { searchParams } = new URL(req.url);

@@ -1,9 +1,9 @@
 import "./globals.css";
 import React from 'react';
 import Navbar from "../../components/navbar/Navbar";
-import { ThemeContextProvider } from "@/context/ThemeContext";
-import ThemeProvider from "@/providers/ThemeProvider";
-import AuthProvider from '@/providers/AuthProvider';
+import { ThemeContextProvider } from "../context/ThemeContext";
+import ThemeProvider from "../providers/ThemeProvider";
+import AuthProvider from '../providers/AuthProvider';
 
 export const metadata = {
   title: "Blog",

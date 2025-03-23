@@ -2,8 +2,8 @@ import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import GithubProvider from "next-auth/providers/github";
 import { MongoDBAdapter } from "@auth/mongodb-adapter";
-import { dbConnection } from "@/app/mongodb";
-import User from "@/../../models/User";
+import { dbConnection } from "../../../mongodb";
+import User from "../../../../../models/User";
 
 export const authOptions = {
     adapter: MongoDBAdapter(

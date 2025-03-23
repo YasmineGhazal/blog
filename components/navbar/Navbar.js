@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useContext } from 'react';
 import Auth from '../Auth/Auth';
-import { ThemeContext } from '@/context/ThemeContext';
+import { ThemeContext } from '../../src/context/ThemeContext';
 import { useRouter } from 'next/navigation';
 
 const Light = () => (<Image src='/light_mode.svg' alt='light_mode_icon' className='mode-ico' height='30' width='30' />);
