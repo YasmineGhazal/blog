@@ -25,6 +25,7 @@ export const authOptions = {
             clientSecret: process.env.GITHUB_CLIENT_SECRET,
         }),
     ],
+    secret: process.env.NEXTAUTH_SECRET,
     callbacks: {
         async session({ session }) {
             const dbUser = await User.findOne({ email: session.user.email });
