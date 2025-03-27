@@ -1,5 +1,5 @@
 # Instructions
-*The app is deployed [here](https://blog-915q949nn-yasmineghazals-projects.vercel.app)*
+*The app is deployed [here](https://blog-nine-lilac-26.vercel.app/)*
 - Clone github repo
 - Open the terminal on the cloned repo directory
 - Run `npm i`
